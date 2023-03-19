@@ -1,0 +1,342 @@
+:root{
+    --Grey37:#373737;
+
+}
+@font-face {
+    font-family: MontSerratSemiB;
+    src: url(fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: MontSerratLight;
+    src: url(fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: MontSerratR;
+    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+h1{
+    font-family: MontSerratSemiB;
+    font-size: 64px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+h4{
+    font-family: 'MontSerratLight';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 100%;
+    color: #DEDEDE;
+}
+p{
+    color: #FFFFFF;
+    font-family: 'MontSerratR';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.upBar{
+    column-gap: 33%;
+    justify-content: space-around;
+    display: flex;
+    background: #DBDBDB;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+}
+.upBar div{
+    display: flex;
+    column-gap: 20% ;
+}
+.upBar a{
+    text-decoration: none;
+    color: #121212;
+    font-family:MontSerratLight ;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 0px 5%;
+}
+header{
+    column-gap: 20%;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    display: flex;
+    min-height: 100px;
+    max-height: 100px;
+    background-color: var(--Grey37);
+    width: 100%;
+}
+header input{
+    text-align: center;
+    height: 35px;
+    width: 450px;
+    border-radius: 35px;
+    text-decoration: none;
+}
+.FindAndBacket{
+    gap: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.main-page{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #E7E7E7;
+}
+button{
+    height: 50px; 
+    width: 300px; 
+    border-radius:  35px; 
+    background-color: #121212;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family:MontSerratR ;
+    border-style: none;
+    cursor: pointer;
+}
+li{
+    display: inline;
+}
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    max-height: 3000px;
+
+}
+
+.Banner{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px ;
+    gap: 5px;
+    width: 100%;
+    height: 845px;
+    background-image: url(media/Frame\ 8.png);
+}
+.MainText{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 30px;
+    
+    width: 823px;
+    height: 845px;
+}
+.listBook{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1%;
+}
+
+.listBook img:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.containerForSize{
+    max-width: 1440px;
+    width: 1440px;
+}
+.aboutouther button{
+    color: white;
+    border:none;
+    border-radius: 5px;
+    background-color: #121212;
+    min-height: 60px;
+    min-width: 280px;
+}
+.aboutouther button a {
+    font-size: 16px;
+}
+.aboutouther button:hover {
+    background-color: #1b1b1b;
+}
+.sales{
+    display: flex;
+    flex-direction: row;
+    background-color:#DEDEDE ;
+    width:100%;
+    justify-content: center;
+    height: 50px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    column-gap: 6%;
+    border-radius: 30px;
+    
+}
+.sales a{
+    font-family: MontSerratR;
+    font-size: 20px;
+}
+.Filters{
+    column-gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.Goods{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    font-family:MontSerratR ;
+    font-size: 20px;
+    text-align: center;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom: 1px solid black;
+    margin: 30px 0;
+}
+h2{
+    font-size: 40px;
+    color:#000000;
+}
+
+.akcii{
+    border-radius: 30px;
+    column-gap: 2%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: #DBDBDB;
+
+    
+}
+.salesinclude {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    padding: 40px;
+}
+.salesinclude div:hover{
+    transform: scale(1.1);
+    border-bottom: 0px solid #000;
+}
+.salesiclude1{
+    justify-content: center;
+    display: flex;
+}
+.Hidden {
+    position: absolute;
+    opacity: 0;
+ }
+.salesinclude div:hover + .Hidden {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.checklist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    margin:3%;
+}
+.backet{
+    text-align: center;
+    background-color: #151515;
+    margin-top: 10%;
+}
+.backet a{
+    font-size: 36px;
+}
+.textb{
+    max-width: 350px;
+    text-align: left;
+}
+.textb a{
+    font-size: 24px;
+}
+.itog{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    column-gap: 3%;
+    padding: 20px;
+    align-items: center;
+}
+.itog button{
+    border-radius: 20px;
+    background-color: #151515;
+    border: 2px solid #B52540;
+}
+.itog button a{
+    font-size: 20px;
+    padding: 20px;
+    font-weight: normal;
+}
+.popup-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.7) ;
+    display: none;
+}
+.popup-bg-log{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.7) ;
+    display: none;
+}
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background: rgb(47, 47, 47);
+    transform: translate(-50%,-50%);
+}
+.popup div{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.popup-log{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background: rgb(37, 37, 37);
+    transform: translate(-50%,-50%);
+}
+.popup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.popup form input{
+    width: 60%;
+    border: 2px solid #000000;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.close-popup{
+    position: absolute;
+    top:30px;
+    right: 30px;
+}
+.no-scroll{
+    overflow-y: hidden;
+}

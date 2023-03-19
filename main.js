@@ -1,0 +1,14 @@
+$('.open-popup').click(function(){
+    $('.popup-bg').fadeIn(600);
+    $('html').addClass('no-scroll');
+});
+$('.close-popup').click(function(){
+    $('.popup-bg').fadeOut(600);
+    $('html').removeClass('no-scroll');
+});
+$('.open-popup-log').click(function(){
+    $('.popup-bg-log').fadeIn(600);
+});
+$('.close-popup').click(function(){
+    $('.popup-bg-log').fadeOut(600);
+});
